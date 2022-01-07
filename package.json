@@ -1,0 +1,36 @@
+{
+  "name": "tree-sitter-ninja",
+  "version": "0.1.0",
+  "description": "Ninja grammar for tree-sitter",
+  "author": "Alexandre Muller",
+  "license": "MIT",
+  "main": "bindings/node",
+  "homepage": "https://github.com/alemuller/tree-sitter-ninja#readme",
+  "bugs": {
+    "url": "https://github.com/alemuller/tree-sitter-ninja/issues"
+  },
+  "homepage": "https://github.com/alemuller/tree-sitter-ninja#readme",
+  "keywords": [
+    "parsing",
+    "incremental",
+    "tree-sitter",
+    "ninja"
+  ],
+  "dependencies": {
+    "nan": "^2.12.1"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.2"
+  },
+  "scripts": {
+    "test": "tree-sitter test"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.ninja",
+      "file-types": [
+        "ninja"
+      ]
+    }
+  ]
+}

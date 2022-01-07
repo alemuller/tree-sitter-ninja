@@ -1,2 +1,2 @@
 # tree-sitter-ninja
-ninja grammar for tree-sitter
+[ninja](https://github.com/ninja-build/ninja/) grammar for tree-sitter
