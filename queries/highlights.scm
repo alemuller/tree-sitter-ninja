@@ -32,7 +32,6 @@
 ;; =====
 (pool      name: (identifier) @type)
 (rule      name: (identifier) @function)
-(rule (let name: (identifier) @constant.builtin))
 (let       name: (identifier) @constant)
 (expansion       (identifier) @constant)
 (build     rule: (identifier) @function)
@@ -61,21 +60,22 @@
 ;; Rules bindings
 ;; -----------------
 (rule
-  (let name: (identifier)  @constant.builtin
-             (#not-any-of? @constant.builtin "command"
-                                             "depfile"
-                                             "deps"
-                                             "msvc_deps_prefix"
-                                             "description"
-                                             "dyndep"
-                                             "generator"
-                                             "in"
-                                             "in_newline"
-                                             "out"
-                                             "restat"
-                                             "rspfile"
-                                             "rspfile_content"
-                                             "pool")))
+  (body
+    (let name: (identifier)  @constant.builtin
+               (#not-any-of? @constant.builtin "command"
+                                               "depfile"
+                                               "deps"
+                                               "msvc_deps_prefix"
+                                               "description"
+                                               "dyndep"
+                                               "generator"
+                                               "in"
+                                               "in_newline"
+                                               "out"
+                                               "restat"
+                                               "rspfile"
+                                               "rspfile_content"
+                                               "pool"))))
 
 ;;
 ;; Expansion

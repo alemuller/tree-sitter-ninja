@@ -1,5 +1,20 @@
 [
   {
+    "type": "body",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "let",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "build",
     "named": true,
     "fields": {
@@ -63,11 +78,11 @@
       }
     },
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "types": [
         {
-          "type": "let",
+          "type": "body",
           "named": true
         }
       ]
@@ -252,11 +267,11 @@
       }
     },
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
-          "type": "let",
+          "type": "body",
           "named": true
         }
       ]
@@ -283,11 +298,11 @@
       }
     },
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
-          "type": "let",
+          "type": "body",
           "named": true
         }
       ]

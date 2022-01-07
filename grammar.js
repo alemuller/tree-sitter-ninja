@@ -16,7 +16,6 @@ module.exports = grammar({
 
   inline: $ => [
     $._ident,
-    $._body,
     $._value,
     $._outputs,
     $._dependencies,
@@ -42,14 +41,14 @@ module.exports = grammar({
       'pool',
       $._ident,
       $._nl,
-      $._body
+      $.body
     ),
 
     rule: $ => seq(
       'rule',
       $._ident,
       $._nl,
-      $._body
+      $.body
     ),
 
     let: $ => seq(
@@ -76,7 +75,7 @@ module.exports = grammar({
       optional(seq('||', field('order_only', $._dependencies))),
       optional(seq('|@', field('validation', $._dependencies))),
       $._nl,
-      optional($._body),
+      optional($.body),
     ),
 
     include: $ => seq(
@@ -91,7 +90,7 @@ module.exports = grammar({
       $._nl
     ),
 
-    _body: $ => repeat1(seq(
+    body: $ => repeat1(seq(
       $._indent,
       $.let
     )),

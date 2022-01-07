@@ -63,7 +63,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "_body"
+          "name": "body"
         }
       ]
     },
@@ -84,7 +84,7 @@
         },
         {
           "type": "SYMBOL",
-          "name": "_body"
+          "name": "body"
         }
       ]
     },
@@ -296,7 +296,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "_body"
+              "name": "body"
             },
             {
               "type": "BLANK"
@@ -339,7 +339,7 @@
         }
       ]
     },
-    "_body": {
+    "body": {
       "type": "REPEAT1",
       "content": {
         "type": "SEQ",
@@ -663,7 +663,6 @@
   "externals": [],
   "inline": [
     "_ident",
-    "_body",
     "_value",
     "_outputs",
     "_dependencies"
